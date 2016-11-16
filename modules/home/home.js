@@ -80,7 +80,7 @@ angular.module('HomeModules', ['me-lazyload'])
 		
 
 		function GetRTime() {
-			var EndTime = new Date('2016/11/15 24:00:00');
+			var EndTime = new Date('2016/11/20 24:00:00');
 			var NowTime = new Date();
 			var t = EndTime.getTime() - NowTime.getTime();
 			var d = 0;
