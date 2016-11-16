@@ -1,0 +1,47 @@
+
+	<!-- 头部 -->
+	<div id="mine-header-box">
+
+		 <div id="mine-header">
+		 	<a ui-sref="mine" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">全部订单</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	 </div>
+	 <!-- 安全提示 -->
+	 <div id="tip">
+	 	<div class="tip-div">
+	 		<i></i>
+	 		安全提醒：酒仙网不会以任何理由要求您点击链接进行退款或重新付款，谨防诈骗！
+	 	</div>
+	 </div>
+
+	 <!-- 暂无订单信息 -->
+	 <div id="dindan">
+	 	<span></span>
+	 	<p>暂无相关订单信息</p>
+	 </div>
+

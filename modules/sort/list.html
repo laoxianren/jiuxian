@@ -1,0 +1,45 @@
+	<div id="mine-header-box">
+		 <div id="mine-header">
+		 	<a ui-sref="sort" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">商品列表</h2>
+		 	<a class="mine-header-a2" ng-click="click_choose()">筛选</a>
+		 </div>
+	</div>
+
+	<ul class="list_ul1">
+		<li class="ul_lis1 lisClass" ng-click="shouliang()">销量</li>
+		<li class="ul_lis1" ng-click="price()"><span>价格</span><span class="list_top"></span></li>
+		<li class="ul_lis1" ng-click="renqi()">人气</li>
+		<li id="list_lis1"><span></span></li>
+	</ul>
+	<div class="list_all">
+		<div class="list_main" ng-repeat='a in arr4|orderBy:"shop_price":flag' ui-sref='shopInfo' ng-click="click_list()" ng-show="show1">
+			<img lazy-src={{a.middle}}/>
+			<p>{{a.goods_name}}</p>
+			<p>￥<span>{{a.shop_price}}</span></p>
+			<p>4.9分<span>  14018人评论</span></p>
+			<p style="display: none;">{{a.goods_id}}</p>
+		</div>
+		<div class="list_main" ng-repeat='a in arr4|orderBy:"goods_id":flag1' ui-sref='shopInfo' ng-click="click_list()" ng-show="show2">
+			<img lazy-src={{a.middle}}/>
+			<p>{{a.goods_name}}</p>
+			<p>￥<span>{{a.shop_price}}</span></p>
+			<p>4.9分<span>  14018人评论</span></p>
+			<p style="display: none;">{{a.goods_id}}</p>
+		</div>	 
+	</div>
+	<div class="list_choose" ng-show='show'>
+		<div class="choose_left">
+			<span ng-click="click_choose()"></span>
+		</div>
+		<div class="choose_right">
+			<ul>
+				<li><i></i><span>全部</span>品牌</li>
+				<li><i></i><span>全部</span>分类</li>
+				<li><i></i><span>全部</span>价格</li>
+				<li><i></i><span>全部</span>场合</li>
+			</ul>
+			<p class="choose_yes">确定</p>
+		</div>
+	</div>
+

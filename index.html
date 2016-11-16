@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jiuxian">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=0.5,maximum-scale=5.0,user-scalable=no,width=device-width">
+	<title>酒仙网-白酒、红酒、洋酒、保健酒、黄酒、酒具官方旗舰店</title>
+	<link rel="shortcut icon" href="logo3.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+  <script type="text/javascript" src="lib/angular-css.min.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router.js"></script>
+<link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+<script type="text/javascript" src="lib/swiper-3.4.0.min.js"></script>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript">
+     (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                 docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+                
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+     
+
+  </script>
+	
+	
+</head>
+<body>
+   <div class="container">
+   	<div ui-view></div>
+   </div>
+<script type="text/javascript" src ="jiuxian.js"></script>
+<script type="text/javascript" src ="./modules/home/home.js"></script>
+<script type="text/javascript" src ="./modules/home/miaopai.js"></script>
+<script type="text/javascript" src ="./modules/sort/sort.js"></script>
+<script type="text/javascript" src ="./modules/sort/list.js"></script>
+<script type="text/javascript" src ="./modules/sort/list_detail.js"></script>
+<script type="text/javascript" src ="./modules/cart/cart.js"></script>
+<script type="text/javascript" src ="./modules/cart/present.js"></script>
+<script type="text/javascript" src ="./modules/mine/mine.js"></script>
+<script type="text/javascript" src ="./modules/mine/dindan.js"></script><script type="text/javascript" src ="./modules/mine/shoucang.js"></script>
+<script type="text/javascript" src ="./modules/mine/dizhi.js"></script>
+<script type="text/javascript" src ="./modules/mine/dizhi2.js"></script>
+<script type="text/javascript" src ="./modules/mine/duihuan.js"></script>
+<script type="text/javascript" src ="./modules/mine/liulan.js"></script>
+<script type="text/javascript" src ="./modules/mine/qianbao.js"></script>
+<script type="text/javascript" src ="./modules/mine/youhuiquan.js"></script>
+<script type="text/javascript" src ="./modules/mine/zhanghu.js"></script>
+<script type="text/javascript" src ="./modules/mine/zhuce.js"></script>
+<script type="text/javascript" src ="./modules/mine/zhuce1.js"></script>
+<script type="text/javascript" src ="./modules/shopInfo/shopInfo.js"></script>
+<script type="text/javascript" src="./modules/home_details/home_details1.js"></script>
+<script type="text/javascript" src="./modules/home_details/home_details2.js"></script>
+<script type="text/javascript" src="./modules/home_details/home_details3.js"></script>
+<script type="text/javascript" src="lib/me-lazyload.js"></script>
+
+
+</body>
+</html>

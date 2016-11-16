@@ -1,0 +1,86 @@
+	<div id="details2" >
+		<div id="header">
+			<a ui_sref="home">
+			<img src="modules/images/jian.jpg" class="leftimg">
+			</a>
+			<p class="centp">{{headername||'酒仙独家'}}</p>
+			<a ng-click="click_nav()">
+			<img src="modules/images/right.gif" class="rightimg">
+			</a>
+		</div>
+		<nav id="nav1" ng-show='show'>
+
+			<a ui-sref="home">
+				<img src="modules/images/nav1.gif">
+				<p>首页</p>
+			</a>
+			<a ui-sref="sort">
+				<img src="modules/images/nav2.gif">
+				<p>搜索</p>
+			</a>
+			<a ui-sref="cart">
+				<img src="modules/images/nav3.gif">
+				<p>购物车</p>
+			</a>
+			<a ui-sref="mine">
+				<img src="modules/images/nav4.gif">
+				<p>我的酒仙</p>
+			</a>
+		</nav>
+	</div>
+	<div id="maindj">
+		<div class="mainTop">
+			<a href="#" class="aOne"><img lazy-src="modules/images/details2-top1.jpg"></a>
+		</div>
+		<div class="mainTop">
+			<a href="#" class="aOne"><img lazy-src="modules/images/details2-top2.jpg"></a>
+			<a href="#" class="aOne"><img lazy-src="modules/images/details2-top3.jpg"></a>
+		</div>
+		<div class="mainbk">
+			<img lazy-src="modules/images/details2-bk1.jpg">
+			<a ui_sref="shopInfo" class="aOne" ng-repeat="x in jiuArr"><img lazy-src={{x.src}}></a>
+			<!-- <a ui_sref="shopInfo" class="aOne"><img src="modules/images/details2-bk2.jpg"></a>
+			<a ui_sref="shopInfo" class="aOne"><img src="modules/images/details2-bk2.jpg"></a>
+			<a ui_sref="shopInfo" class="aOne"><img src="modules/images/details2-bk2.jpg"></a>
+			<a ui_sref="shopInfo" class="aOne"><img src="modules/images/details2-bk2.jpg"></a> -->
+		</div>
+		<div class="maindj">
+			<img lazy-src="modules/images/details2-dj1.jpg">
+		</div>
+		<ul class="maindjinfo">
+			<li ng-repeat="x in jiuArr1">
+				<a ui_sref="shopInfo">
+					<img lazy-src={{x.src}}>
+				</a>
+			</li>
+		</ul>
+		<div class="mainFooter">
+			<div class="allsty">
+				<img lazy-src="modules/images/bottom1.jpg">
+			</div>
+			<<!-- div class="allsty" ng-repeat="x in jiuArr2">
+				<img lazys-src={{x.src}}>
+				<a href="#" class="aleft1 aleft"></a>
+				<a href="#" class="aleft1 aleft2"></a>
+			</div> -->
+			<div class="allsty">
+				<img src="modules/images/bottom3a.jpg">
+				<a href="#" class="aleft1 aleft"></a>
+				<a href="#" class="aleft1 aleft2"></a>
+			</div>
+			<div class="allsty">
+				<img src="modules/images/bottom3a.jpg">
+				<a href="#" class="aleft1 aleft"></a>
+				<a href="#" class="aleft1 aleft2"></a>
+			</div>
+			<div class="allsty">
+				<img src="modules/images/bottom3a.jpg">
+				<a href="#" class="aleft1 aleft"></a>
+				<a href="#" class="aleft1 aleft2"></a>
+			</div>
+		</div>
+		<div class="toTop">
+				<img lazy-src="modules/images/top.png">
+				<span>返回<br>顶部</span>
+		</div>
+	</div>

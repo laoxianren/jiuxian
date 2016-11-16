@@ -1,0 +1,294 @@
+body{
+    font-size: .14rem;
+}
+#mine-header-box{
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: block;
+}
+#mine-header{
+	width: 100%;
+	height: 40px;
+	background-color: #de4943;
+	color: #fff;
+}
+.mine-header-a1{
+	text-decoration: none;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	display: block;
+	background-position: -15px 6px;
+    right: 10px;
+	background: url(https://miscssl.jiuxian.com/mjava_statics/images/headBack.jpg) no-repeat
+}
+.mine-header-h2{
+	width: 2.2rem;
+	height: 40px;
+	margin-left: -1.1rem;
+	font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+.mine-header-a2{
+	text-decoration: none;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+   
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/headIcon.png);
+	background-position: -150px 6px;
+}
+
+#mine-header-ul{
+	height: 44px;
+	width: 100%;
+    background-color:#efefef;
+    color: #848d96;
+    top: 40px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+#mine-header-ul li{
+	width: 25%;
+    height: 45px;
+    float: left;
+    position: relative;
+    color: #848d96;
+    font-size: .14rem;
+    text-align: center;
+}
+#mine-header-ul li i{
+	width: 26px;
+    height: 20px;
+    display: block;
+    margin: 5px auto 0;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/headIcon.png) no-repeat;
+    
+	
+}
+#mine-header-ul li:first-of-type i{
+	
+    background-position: -3px -5px;
+
+}
+#mine-header-ul li:nth-of-type(2) i{
+	
+	background-position: -37px -5px;
+}
+#mine-header-ul li:nth-of-type(3) i{	
+
+	background-position: -72px -5px;
+}
+#mine-header-ul li:nth-of-type(4) i{
+
+	background-position: -113px -5px;
+}
+#mine-header-ul li span{
+	width: auto;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+#mine-header-ul li a{
+	width: 100%;
+    height: 45px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+}
+#mine-info{
+	height: 1.68rem;
+	width: 100%;
+	vertical-align: top;
+	margin-top: .4rem;
+	position: relative;
+    color: #000;
+}
+.mine-info-img{
+	width: 100%;
+    z-index: -5;
+    border: 0;
+}
+.mine-info-div1{
+	width: 100%;
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+.mine-info-div1-l{
+	width: 22%;
+    margin: 0 15px 0 5%;
+    float: left;
+}
+.mine-info-div1-l img{
+	width: 90%;
+    margin: 5% 0 0 8%;
+}
+.mine-info-div1-r{
+	float: left;
+	margin-top: 6%;
+}
+.mine-info-div1-r p:first-of-type{
+	font-weight: bold;
+    color: #fa281b;
+} 
+.mine-info-div2{
+	width: 100%;
+    height: 32%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #171516;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/usercenter/transparent.png) repeat;
+}
+.mine-info-div2-p{
+	font-size: .12rem;
+	width: 18%;
+    height: 82%;
+    text-align: center;
+    color: #fff;
+    margin-left: 7.5%;
+    padding-top: 2%;
+    float: left;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/usercenter/grade.png) no-repeat;
+    background-size: 100%;
+}
+.mine-info-div2-div{
+	width: 70%;
+    height: 100%;
+    float: right;
+    position: relative;
+
+}
+.mine-info-div2-div a{
+	width: 25%;
+    height: 100%;
+    float: left;
+    color: #000;
+    cursor: pointer;
+    display: block;
+}
+.mine-info-div2-div a span{
+	width: 100%;
+    height: 35%;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+.mine-info-div2-div a strong{
+	width: 100%;
+    height: 35%;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+.mine-info-div2-div-s1{
+	width: 2px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/usercenter/userIcon.png) no-repeat;
+    background-position: -10px -6px;
+    top: 10%;
+    left: 25%
+}
+.mine-info-div2-div-s2{
+	width: 2px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/usercenter/userIcon.png) no-repeat;
+    background-position: -10px -6px;
+    top: 10%;
+    left: 50%
+}
+.mine-info-div2-div-s3{
+	width: 2px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/usercenter/userIcon.png) no-repeat;
+    background-position: -10px -6px;
+    top: 10%;
+    left: 75%
+}
+.mine-main-ul:after{
+	clear: both;
+    display: block;
+    content: "...";
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}
+.mine-main-ul{
+	padding-top: 20px;
+	list-style: none;
+}
+.mine-main-li{
+	width: 33.3%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0 5%;
+    float: left;
+    box-sizing: border-box;
+
+}
+.mine-main-a img{
+	width: 100%;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+.mine-main-a span{
+	width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    color: #626365;
+}
+#mine-tc{
+	width: 100%;
+    max-width: 300px;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+    background: #DE4B45;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+	
+}
+#mine-tc:after{
+	clear: both;
+    display: block;
+    content: "...";
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}

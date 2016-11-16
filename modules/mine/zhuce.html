@@ -1,0 +1,84 @@
+
+	<!-- 头部 -->
+	<div id="mine-header-box">
+
+		 <div id="mine-header">
+		 	<a ui-sref="home" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">用户登录</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	 </div>
+
+	 <ul id="zhuce-ul">
+	 	<li class="zhuce-li1">
+	 		<p><a ui-sref="zhuce">账号登录</a></p>
+	 		<span></span>
+	 	</li>
+	 	<li class="zhuce-li2">
+	 		<p><a ui-sref="zhuce1">手机动态密码登录</a></p>
+	 		<span></span>
+	 	</li>
+	 </ul>
+
+	 <div id="zhuce-main">
+	 	<form class="zhuce-form">
+	 		<div class="zhuce-form-div1">
+	 			<i class="zhuce-form-div1-i1"></i>
+	 			<input type="text" placeholder="手机号" id="phone1" /><br/>
+	 			<span id="n"></span>
+	 		</div>
+	 		<div class="zhuce-form-div1">
+	 			<i class="zhuce-form-div1-i2"></i>
+	 			<input type="password" placeholder="密码" id="phone2" /><br/>
+	 			<span id="m"></span>
+	 		</div>
+	 		<div class="zhuce-form-div2">
+	 			<div class="zhuce-form-div1-div1">
+	 				<input type="text" placeholder="验证码">
+	 			</div>
+	 			<div class="zhuce-form-div1-div2">
+	 				<a href="#">换一张</a>
+	 				<a href="#"><img src="http://appimgupload.jiuxian.com/mobilecms/images/verifyimg?app_key=fb53eed2ae7d4957a0f55f341119b751&code=1478948096749"> </a>
+	 			</div>
+	 		</div>
+	 			<a ui-sref="mine" class="btn" id="btnn" ng-click='denglu()'>立即登录</a>
+	 			<div class="zhuce-zhuce">
+	 				<a href="#">免费注册</a>
+	 				<a href="#">找回密码</a>
+	 			</div>
+	 			<div class="zhuce-huoban">
+	 				<div class="zhuce-huoban-div1">
+	 					<div class="zhuce-huoban-div1-div1"></div>
+	 					<div class="zhuce-huoban-div1-div2">合作伙伴登录</div>
+	 				</div>
+	 				<ul class="zhuce-huoban-ul">
+	 					<li class="zhuce-huoban-li1"><a href="#"></a></li>
+	 					<li class="zhuce-huoban-li2"><a href="#"></a></li>
+	 				</ul>
+	 			</div>
+	 	</form>
+	 </div>
+	

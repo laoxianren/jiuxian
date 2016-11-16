@@ -1,0 +1,88 @@
+	<div id="details1" >
+		<div id="header">
+			<a ui_sref="home">
+			<img src="modules/images/jian.jpg" class="leftimg">
+			</a>
+			<p class="centp">{{headername}}</p>
+			<a ng-click="click_nav()">
+			<img src="modules/images/right.gif" class="rightimg">
+			</a>
+		</div>
+		<nav id="nav1" ng-show='show'>
+			<a ui-sref='home'>
+				<img src="modules/images/nav1.gif">
+				<p>首页</p>
+			</a>
+			<a ui-sref='sort'>
+				<img src="modules/images/nav2.gif">
+				<p>搜索</p>
+			</a>
+			<a ui-sref='cart'>
+				<img src="modules/images/nav3.gif">
+				<p>购物车</p>
+			</a>
+			<a ui-sref='mine'>
+				<img src="modules/images/nav4.gif">
+				<p>我的酒仙</p>
+			</a>
+		</nav>
+	</div>
+	
+	<div id="hdh">
+		<div class="navbox">
+			<div class="img_navbox">
+				<a href="#" class="img1"><img src="modules/images/navImg1.jpg"></a>
+				<a href="#" class="img2"><img src="modules/images/navImg2.jpg"></a>
+				<a href="#" class="img3"><img src="modules/images/navImg3.jpg"></a>	
+			</div>
+			<div class="nav_navbox">
+				<ul>
+					<li>
+						<a href="#">茅台</a>
+					</li>
+					<li>
+						<a href="#">五粮液</a>
+					</li>
+					<li>
+						<a href="#">汾酒</a>
+					</li>
+					<li>
+						<a href="#">泸州老窖</a>
+					</li>
+					<li>
+						<a href="#">酱香</a>
+					</li>
+					<li>
+						<a href="#">清香</a>
+					</li>
+					<li>
+						<a href="#">浓香</a>
+					</li>
+					<li>
+						<a href="#">查看全部</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="shopInfo">
+			<fieldset>
+				<legend>精品推荐</legend>
+			</fieldset>
+			<ul>
+				<li ng-repeat='w in arr3' ui-sref='shopInfo' ng-click="click_bang()">
+					<a>
+						<img lazy-src={{w.middle}}>
+						<div style="width: 65%;">
+							<p class="p1">{{w.goods_name}}</p>
+							<p class="p2">10月20:00,11.11活动价1500元，抢先知</p>
+							<p class="p3">￥{{w.shop_price}}</p>
+						</div>
+					</a>
+				</li>
+				 
+			</ul>
+		</div>
+		<div class="allInfo">
+			<a href="#">查看全部</a>
+		</div>
+	</div>

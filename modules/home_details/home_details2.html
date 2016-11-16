@@ -1,0 +1,277 @@
+	<div id="details2" >
+		<div id="header">
+			<a ui_sref="home">
+			<img src="modules/images/jian.jpg" class="leftimg">
+			</a>
+			<p class="centp">{{headername||'酒仙独家'}}</p>
+			<a ng-click="click_nav()">
+			<img src="modules/images/right.gif" class="rightimg">
+			</a>
+		</div>
+		<nav id="nav1" ng-show='show'>
+			<a ui-sref="home">
+				<img src="modules/images/nav1.gif">
+				<p>首页</p>
+			</a>
+			<a ui-sref="sort">
+				<img src="modules/images/nav2.gif">
+				<p>搜索</p>
+			</a>
+			<a ui-sref="cart">
+				<img src="modules/images/nav3.gif">
+				<p>购物车</p>
+			</a>
+			<a ui-sref="mine">
+				<img src="modules/images/nav4.gif">
+				<p>我的酒仙</p>
+			</a>
+		</nav>
+	</div>
+	<div id="mainInfo">
+		<div class="allsty">
+			<img lazy-src="modules/images/1a.jpg">
+		</div>
+		<div class="allsty">
+			<img lazy-src="modules/images/2a.jpg">
+		</div>
+		<div class="allsty">
+			<img lazy-src="modules/images/3a.jpg">
+		</div>
+		<div class="allsty">
+			<img lazy-src="modules/images/4a.jpg">
+		</div>
+		<div class="allsty">
+			<img lazy-src="modules/images/5a.jpg">
+		</div>
+		<div class="allsty">
+			<a ui_sref="shopInfo" class="aOne"><img lazy-src="modules/images/6a.jpg"></a>
+		</div>
+		<div class="allsty">
+			<a ui_sref="shopInfo" class="aOne"><img lazy-src="modules/images/7a.jpg"></a>
+		</div>
+		<div class="allsty">
+			<img lazy-src="modules/images/8.jpg">
+		</div>
+		<div class="allsty" ng-repeat="x in huiArr1">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/9d.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>-->
+		<div class="allsty">
+			<img lazy-src="modules/images/11.jpg">
+		</div>
+		<div class="allsty" ng-repeat="x in huiArr2">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div> -->
+		<div class="allsty">
+			<img lazy-src="modules/images/14.jpg">
+		</div>
+		<div class="allsty" ng-repeat="x in huiArr3">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div> -->
+		<div class="allsty">
+			<img lazy-src="modules/images/21.jpg">
+		</div>
+		<div class="allsty"  ng-repeat="x in huiArr4">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div> -->
+		<div class="allsty">
+			<img lazy-src="modules/images/30.jpg">
+		</div>
+		<div class="allsty" ng-repeat="x in huiArr5">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div> -->
+
+		<div class="allsty">
+			<img lazy-src="modules/images/39.jpg">
+		</div>
+		<div class="allsty" ng-repeat="x in huiArr6">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div> -->
+
+		<div class="allsty">
+			<img lazy-src="modules/images/44.jpg">
+		</div>
+		<div class="allsty" ng-repeat="x in huiArr7">
+			<img lazy-src={{x.src}}>
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<!-- <div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/12c.jpg">
+			<a ui_sref="shopInfo" class="aleft1 aleft"></a>
+			<a ui_sref="shopInfo" class="aleft1 aleft2"></a>
+		</div> -->
+
+		<div class="allsty">
+			<img lazy-src="modules/images/bottom1.jpg">
+		</div>
+		<!-- <div class="allsty" ng-repeat="x in huiArr8">
+			<img lazy-src={{x.src}}>
+			<a href="#" class="aleft1 aleft"></a>
+			<a href="#" class="aleft1 aleft2"></a>
+		</div> -->
+		<div class="allsty">
+			<img src="modules/images/bottom3a.jpg">
+			<a href="#" class="aleft1 aleft"></a>
+			<a href="#" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/bottom3a.jpg">
+			<a href="#" class="aleft1 aleft"></a>
+			<a href="#" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<img src="modules/images/bottom3a.jpg">
+			<a href="#" class="aleft1 aleft"></a>
+			<a href="#" class="aleft1 aleft2"></a>
+		</div>
+		<div class="allsty">
+			<a href="#" class="aOne toTop"><img src="modules/images/end.jpg"></a>
+		</div>
+	</div>

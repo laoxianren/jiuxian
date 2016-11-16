@@ -1,0 +1,228 @@
+<!-- 首页头部 -->
+<div class="index_header">
+		<div class="index_header_left"></div>
+		<div class="index_header_center">
+			<div class="index_header_center_serch">
+				<i class="serch1"></i>
+			</div>
+			<input type="text">
+		</div>
+		<div class="index_header_right" ui-sref="sort">搜索</div>
+	</div>
+	<!-- 首页轮播图效果 -->
+		<div class="index_circle_img swiper-container">
+    		<div class="swiper-wrapper">
+    			<div class="swiper-slide" ui-sref="home_details2" ng-repeat="z in arr2" repeat-finish>
+                    <img ng-src={{z.activity.img}} />
+                </div>
+                 
+    		</div>
+    		  <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination" style="top:80%;"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <!-- <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div> -->
+		    
+		    <!-- 如果需要滚动条 -->
+		    <div class="swiper-scrollbar"></div> 
+	</div>
+	<!-- 主要功能区 -->
+	<div class="index_main1">
+	<!-- 第一部分的酒品分类 -->
+		<div class="index_main1_style">
+			<ul>
+				<a ui-sref="home_details1">
+				<li name='白酒'>
+					<div class="index_main1_style_img" style="background-image:url(http://img07.jiuxian.com/bill/2016/1111/586c8715b56d46659ea66278ed175a44.jpg)"></div>
+					<p>白酒</p>
+				</li>
+				</a>
+				<a ui-sref="home_details1">
+				<li name='葡萄酒'>
+					<div class="index_main1_style_img" style="background-image:url(http://img07.jiuxian.com/bill/2016/1111/a659ba0fc02a40f390f9d9f1449f0d68.jpg)"></div>
+					<p>葡萄酒</p>
+				</li>
+				</a>
+				<a ui-sref="home_details1">
+				<li name='洋酒'>
+					<div class="index_main1_style_img"></div>
+					<p>洋酒</p>
+				</li>
+				</a>
+				<a ui-sref="home_details2">
+				<li name='品牌日'>
+					<div class="index_main1_style_img" style="background-image:url(http://img06.jiuxian.com/bill/2016/1111/89a0367094ed4786bdabe8b8668b08da.jpg)"></div>
+					<p>品牌日</p>
+				</li>
+				</a>
+				<a ui-sref="home_details2">
+				<li name='整箱团购'>
+					<div class="index_main1_style_img" style="background-image:url(http://img09.jiuxian.com/bill/2016/1110/563a6ce4ead342e2b244f39d391161bf.jpg)"></div>
+					<p>整箱团购</p>
+				</li>
+				</a>
+				<a ui-sref="home_details3">
+				<li name='酒仙独家'>
+					<div class="index_main1_style_img" style="background-image:url(http://img06.jiuxian.com/bill/2016/1110/e9fcba14301a4f9aafb396ff6386b198.jpg)"></div>
+					<p>酒仙独家</p>
+				</li>
+				</a>
+				<a ui-sref="home_details3">
+				<li name='名品清仓'>
+					<div class="index_main1_style_img" style="background-image:url(http://img10.jiuxian.com/bill/2016/1110/f1b53ab664de4b5baa69917994960e0d.jpg)"></div>
+					<p>名品清仓</p>
+				</li>
+				</a>
+				<a ui-sref="home_details3">
+				<li name='必买清单'>
+					<div class="index_main1_style_img" style="background-image:url(http://img08.jiuxian.com/bill/2016/1110/42359e4a8bd741e4bf5648cda8da1fa2.jpg)"></div>
+					<p>必买清单</p>
+				</li>
+				</a>
+			</ul>
+		</div>
+		<!-- 秒杀疯狂双十一 -->
+		<div class="index_main1_skill">
+			<h3 class="index_main1_skill_h3">
+				<span>▌</span> 
+				<span>掌上秒拍</span>
+				<div class="daojishi">
+         			<span>距结束</span>
+          			<span id="t_h">{{shi}}</span>
+          			:
+           			<span id="t_m">{{fen}}</span>
+            		:
+           			<span id="t_s">{{miao}}</span>
+        		</div>
+				<span ui-sref='miaopai' class="index_main1_skill_h3-span">更多商品等你来 》</span>
+			</h3>
+			<div class="index_main1_skill_ul">
+				<ul>
+					<li ng-repeat=" x in arr.tuan.order" id ={{x.goods_id}} ng-click="click_li()" ui-sref="shopInfo">
+						<div class="index_main1_skill_ul_img" style="background-image:url({{x.goods_thumb}})"></div>
+						<p>{{x.goods_name}}</p>
+						<p style="color: #fc5b5b;"><span>￥</span><span>{{x.market_price}}</span></p>
+					</li>
+					 
+				</ul>
+			</div>
+		</div>
+		<!-- 主要图片区域 -->
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img06.jiuxian.com/bill/2016/1110/1c4143591cf0411f9baa4de7f66c10f1.jpg">
+		</div>
+		<div class="index_main1_images1_1" ui-sref='home_details3'>
+			<img lazy-src="http://img10.jiuxian.com/bill/2016/1111/1606805237c3413ca3f3833e1d9d3b63.jpg" ui-sref='home_details3'>
+			<img lazy-src="http://img08.jiuxian.com/bill/2016/1110/bc235dd806444185a562a33ce7a8e7a8.jpg" ui-sref='home_details3'>
+			<img lazy-src="http://img07.jiuxian.com/bill/2016/1110/4bb52057024540fa835f1c6e490c8a1d.jpg" ui-sref='home_details3'>
+		</div>
+		<div class="index_main1_images1_2">
+			<img lazy-src="http://img09.jiuxian.com/bill/2016/1110/26ba64f3a7f54c11a1ba50042b052802.jpg" ui-sref='home_details3'>
+			<img lazy-src="http://img06.jiuxian.com/bill/2016/1111/966609c13d864a33b6d8b1986e3441c2.jpg" ui-sref='home_details3'>
+			<img lazy-src="http://img09.jiuxian.com/bill/2016/1110/556cfea6807b4775aabf98e9a544aabb.jpg" ui-sref='home_details3'>
+		</div>
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img10.jiuxian.com/bill/2016/1110/4efc7548a3444d42aac636ae905d4681.jpg">
+		</div>
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img06.jiuxian.com/bill/2016/1110/62cbd54eb9294342b51e527ea991b4ad.jpg">
+		</div>
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img09.jiuxian.com/bill/2016/1110/2f1609998e6f4227b73e89ebe0fe35ad.jpg">
+		</div>
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img08.jiuxian.com/bill/2016/1110/24e48420a47a4d5dadf13aebed353ea9.jpg">
+		</div>
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img06.jiuxian.com/bill/2016/1110/8f603e58bd4e491fa97932754279ded1.jpg">
+		</div>
+		<div class="index_main1_images" ui-sref='home_details3'>
+		<img lazy-src="http://img08.jiuxian.com/bill/2016/1110/6bdb83150587473289f154d53c92a595.jpg">
+		</div>
+		<div class="title_jie">
+			<h3>
+				<span>▍</span>
+				<span>主题街</span>
+			</h3>
+			<div class="title_jie_1_1">
+				<img lazy-src="http://img10.jiuxian.com/bill/2016/1110/66d1e053ccd3404a94e22ef51e6af374.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img09.jiuxian.com/bill/2016/1110/f2e44d6854714e52b3be06754f291b7e.jpg" ui-sref='home_details2'>
+			</div>
+			<div class="title_jie_1_2">
+				<img lazy-src="http://img10.jiuxian.com/bill/2016/1110/81625d2fa4b541b3b088fe8d3fe866a1.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img09.jiuxian.com/bill/2016/1110/cbad51c825d745108518eea70abacee6.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img08.jiuxian.com/bill/2016/1111/14de594191ad45e0b12d3ed44dafb36a.jpg" ui-sref='home_details2'>
+			</div>
+			<div class="title_jie_1_2">
+				<img lazy-src="http://img10.jiuxian.com/bill/2016/1110/96dd700ff4b946d7b8db3183bf86ca50.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img08.jiuxian.com/bill/2016/1110/f052ccdbde064d8d80c0da7bde551732.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img09.jiuxian.com/bill/2016/1110/b302aef0d5ee4d97beb1543c5906abd9.jpg" ui-sref='home_details2'>
+			</div>
+			 
+		</div>
+		<div class="title_jingxuan">
+			<h3>
+				<span>▍</span>
+				<span>精选频道</span>
+			</h3>
+			<div class="title_jingxuan_img">
+				<img lazy-src="http://img06.jiuxian.com/bill/2016/1110/d5b3525be40d4ca6ab6ad87f86e72305.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img06.jiuxian.com/bill/2016/1110/44f504a163e54fc89fd7eae3d3b7db56.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img08.jiuxian.com/bill/2016/1110/3342031c29d84c7fb371cb8024cfd262.jpg" ui-sref='home_details2'>
+				<img lazy-src="http://img07.jiuxian.com/bill/2016/1110/e420f477ee224705aa1251b8dc364c48.jpg" ui-sref='home_details2'>
+			</div>
+		</div>
+		<div class="recommend">
+			<fieldset>
+				<legend>您的专属推荐</legend>
+			</fieldset>
+		</div>
+		<div class="index_list_main1">
+			<ul>
+				<li ng-repeat='y in arr1' ng-click="click_li2()" ui-sref="shopInfo" id={{y.good_id}}>
+					<div class="index_list_main1_img">
+						<img lazy-src={{y.middle}}>
+					</div>
+					<p>{{y.goods_name}}</p>
+					<p><span>￥</span><span>{{y.shop_price}}</span></p>
+				</li> 
+			</ul>
+		</div>
+		<div class="footer_xieyi">
+			<p>酒仙网电子商务股份有限公司版权所有</p>
+			<p>北京市经济开发区经海五路科创11街数字工场</p>
+			<p>400-617-9999</p>
+			<p>关于我们</p>
+		</div>
+	</div>
+	<div class="index_footer">
+		<ul>
+		
+			<li ui-sref="home">
+				<div class="index_footer_img1 index_footer_img"></div>
+			</li>
+	
+		
+			<li ui-sref="sort">
+				<div class="index_footer_img2 index_footer_img"></div>
+				 
+			</li>
+		
+		
+			<li ui-sref="cart">
+				<div class="index_footer_img3 index_footer_img"></div>
+			 
+			</li>
+		
+			 
+			<li  ui-sref="{{address}}"  ng-click='change()'>
+				<div class="index_footer_img4 index_footer_img"></div>
+				 
+			</li>
+
+			
+		</ul>
+	</div>
+	<a ng-click="dingbu()"><div class="index_top_shang"></div></a>
+ 

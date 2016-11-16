@@ -1,0 +1,39 @@
+{
+	"data": {
+		"slide": [{
+				"activity": {
+					"name": "水果权益日",
+					"img": "http://img08.jiuxian.com/bill/2016/1110/a82115ff190947ebbbcea625727b9757.jpg"
+				}
+			}, {
+				"activity": {
+					"name": "大闸蟹开湖国庆",
+					"img": "http://img08.jiuxian.com/bill/2016/1110/1e94ea9192a44f2cac5c074c8576a1f5.jpg"
+				}
+			}, {
+				"activity": {
+					"name": "九月大促",
+					"img": "http://img09.jiuxian.com/bill/2016/1110/34c141ae8ac34d538f4a45467fdbbd1d.jpg"
+				}
+			}, {
+				"activity": {
+					"name": "新鲜预订-零食满60减15",
+					"img": "http://img07.jiuxian.com/bill/2016/1110/8534fe7c964c486ea0d45eb427953b57.jpg"
+				}
+			}, {
+				"activity": {
+					"name": "怀来马奶葡萄专题",
+					"img": "http://img10.jiuxian.com/bill/2016/1110/93caa36cb1dc47b99beae95c58cb07b4.jpg"
+				}
+			}, {
+				"activity": {
+					"name": "新鲜预订－零度果坊鲜榨果汁",
+					"img": "http://img06.jiuxian.com/bill/2016/1110/46000f8707c24f8a9333d3e635beb2c5.jpg"
+				}
+			}
+
+
+
+		]
+	}
+}

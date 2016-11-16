@@ -1,0 +1,127 @@
+<div id="mine-header-box">
+		<div id="mine-header">
+		 	<a ui-sref="home" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">商品列表</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		</div>
+
+		<ul id="mine-header-ul" ng-show='show1'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	</div>
+	<div class="sort_header">
+		<div>
+			<input type="text" id="sort_t1" onfocus="javascript:$('.sort_current').text('');" onblur="javascript:if($('#sort_t1').val() == ''){$('.sort_current').text('飞天茅台');}" ng-click="click_search()">
+			<span class="sort_current" ng-click="click_search()">飞天茅台</span>
+			<div class="sort_search" ng-click="click_search()">搜索</div>
+		</div>
+	</div>
+	<ul class="sort_ul" ng-show='show3'>
+		<li class="sort_lis1" ui-sref="list">
+			<div></div>
+			<p>白酒</p>
+		</li>
+
+		<li class="sort_lis2" ui-sref="list">
+			<div></div>
+			<p>葡萄酒</p>
+		</li>
+		<li class="sort_lis3" ui-sref="list">
+			<div></div>
+			<p>洋酒</p>
+		</li>
+		<li class="sort_lis4" ui-sref="list">
+			<div></div>
+			<p>啤酒</p>
+		</li>
+		<li class="sort_lis5" ui-sref="list">
+			<div></div>
+			<p>保健酒</p>
+		</li>
+		<li class="sort_lis6" ui-sref="list">
+			<div></div>
+			<p>酒具</p>
+		</li>
+		<li class="sort_lis7" ui-sref="list">
+			<div></div>
+			<p>礼节拜访</p>
+		</li>
+		<li class="sort_lis8" ui-sref="list">
+			<div></div>
+			<p>婚庆用酒</p>
+		</li>
+		<li class="sort_lis9" ui-sref="list">
+			<div></div>
+			<p>商务宴请</p>
+		</li>
+		<li class="sort_lis10" ui-sref="list">
+			<div></div>
+			<p>朋友聚会</p>
+		</li>
+		<li class="sort_lis11" ui-sref="list">
+			<div></div>
+			<p>小资生活</p>
+		</li>
+		<li class="sort_lis12" ui-sref="list">
+			<div></div>
+			<p>女士专区</p>
+		</li>
+		<li class="sort_lis13" ui-sref="list">
+			<div></div>
+			<p>名优白酒</p>
+		</li>
+		<li class="sort_lis14" ui-sref="list_detail">
+			<div></div>
+			<p>列级酒庄</p>
+		</li>
+		<li class="sort_lis15" ui-sref="list">
+			<div></div>
+			<p>精品洋酒</p>
+		</li>
+		<li class="sort_lis16" ui-sref="list">
+			<div></div>
+			<p>大宗采购</p>
+		</li>
+		<li class="sort_lis17" ui-sref="list">
+			<div></div>
+			<p>超值套装</p>
+		</li>
+		<li class="sort_lis18" ui-sref="list">
+			<div></div>
+			<p>超值口粮</p>
+		</li>
+	</ul>
+	<div class="sort_hotSearch" ng-show="show2">
+		<div class="sort_hotSearch1">
+			<h3>热门搜索：</h3>
+			<ul class="sort_hotSearch_ul">
+				<li>茅台</li>
+				<li>五粮液</li>
+				<li>泸州老窖</li>
+				<li>剑南春</li>
+				<li>酒鬼酒</li>
+				<li>威士忌</li>
+				<li>拉菲</li>
+			</ul>
+		</div>
+		<div class="sort_nulls" ng-click="click_choice()"></div>
+	</div>

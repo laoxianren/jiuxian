@@ -1,0 +1,60 @@
+<div id="shoppingCart">
+		<div class="shoppingCart-1">
+				<!-- 头部 -->
+		 <div id="mine-header">
+		 	<a class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">提交订单</h2>
+		 	<a href="#" class="mine-header-a2">
+		 	</a>
+		 </div>
+
+		 <ul id="mine-header-ul">
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a href="#"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a href="#"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a href="#"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a href="#"></a>
+	 		</li> 
+	 	</ul>
+		</div>
+		<p>
+			<span>!</span>
+			实付金额满100元免运费 , 偏远地区实付满300免运费~
+		</p>
+		<div class="shoppingCart-2" ng-show="show3">
+			<ul class="gouwudan">
+			</ul>
+		</div>
+		<div class="shoppingCart-settle" ng-show="show3">
+			<div>
+				<a href="#">
+				<span><img src="images/shoppingCart-face.jpg"></span> &nbsp;&nbsp;全选
+				</a>
+				<p>合计： <span class="addx">0￥</span></p>
+				<p>优惠： <span>0￥</span></p>
+			</div>
+			<a ui-sref="present">去结算(<span class="zongji"></span>)</a>
+		</div>
+		<div class="hollowCart-2" ng-show ="show4">
+			<div>
+				<img src="images/kong.png"/>
+				<p>购物车还是空的</p>
+				<p>快去逛逛吧~</p>
+				<a ui-sref='home'>促销活动</a>
+			</div>
+		</div>
+	</div>

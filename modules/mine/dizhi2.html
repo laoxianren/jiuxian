@@ -1,0 +1,77 @@
+
+	<!-- 头部 -->
+	<div id="mine-header-box">
+
+		 <div id="mine-header">
+		 	<a ui-sref="dizhi" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">配送地址</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	 </div>
+
+<div id="peisong-main">
+ 	<div class="peisong-main-div1">
+ 		<p class="peisong-main-p">
+ 			<span>收货人：</span>
+ 			<input type="text">
+ 		</p>
+ 		<p class="peisong-main-p">
+ 			<span>手机号码：</span>
+ 			<input type="text">
+ 		</p>
+ 		<p class="peisong-main-p">
+ 			<span>固定电话（选填）：</span>
+ 			<input type="text">
+ 		</p>
+ 		<p class="peisong-main-p">
+ 			<span>所在地区：</span>
+ 			<!-- <div class="peisong-main-p-div"> -->
+ 				<select>
+ 					<option>请选择</option>
+ 					<option>北京</option>
+ 					<option>上海</option>
+ 					<option>重庆</option>
+ 				</select>
+ 				<select>
+ 					<option>请选择</option>
+ 				</select>
+ 				<select>
+ 					<option>请选择</option>
+ 					
+ 				</select>
+ 			<!-- </div> -->
+ 		</p>
+ 		<p class="peisong-main-p">
+ 			<span>详细地址：</span>
+ 			<input type="text">
+ 		</p>
+ 	</div>
+	
+ </div>
+
+
+ <input type="submit" value="确认" class="peisong-end" ui-sref="mine">
+	

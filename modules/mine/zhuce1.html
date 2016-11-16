@@ -1,0 +1,77 @@
+
+	<!-- 头部 -->
+	<div id="mine-header-box">
+
+		 <div id="mine-header">
+		 	<a ui-sref="home" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">用户登录</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	 </div>
+
+	 <ul id="zhuce-ul">
+	 	<li class="zhuce-li1">
+	 		<p><a ui-sref="zhuce">账号登录</a></p>
+	 		<span></span>
+	 	</li>
+	 	<li class="zhuce-li2">
+	 		<p><a ui-sref="zhuce1">手机动态密码登录</a></p>
+	 		<span></span>
+	 	</li>
+	 </ul>
+
+	 <div id="zhuce-main">
+	 	<form class="zhuce-form">
+	 		<div class="zhuce-form-div1">
+	 			<i class="zhuce-form-div1-i1"></i>
+	 			<input type="text" placeholder="请输入手机号码" id="phone" /><br/>
+	 			<span id="v"></span>
+	 		</div>
+	 		<div class="zhuce-form-div2">
+	 			<div class="zhuce-form-div1-div1">
+	 				<input type="text" placeholder="请输入验证码">
+	 			</div>
+	 			<div class="zhuce-form-div1-div2">
+	 				<a href="#">换一张</a>
+	 				<a href="#"><img src="http://appimgupload.jiuxian.com/mobilecms/images/verifyimg?app_key=fb53eed2ae7d4957a0f55f341119b751&code=1478948096749"> </a>
+	 			</div>
+	 			
+	 		</div>
+ 			<div class="zhuce-form-div3">
+ 				<input type="text" placeholder="请输入校验码">
+ 				<div class="zhuce-form-div3-div1">
+	 				<a href="#" id="ba">获取校验码</a>
+	 			</div>
+ 			</div>
+	 			<a href="#" class="btn" ng-click='denglu()' id="baaa">立即登录</a>
+	 			
+	 	</form>
+	
+
+	 <div id="baa" style="display:none;">
+	 <p>本网站暂不支持手机号注册与登陆<span id="span">X</span></p>
+	 </div>
+ </div>

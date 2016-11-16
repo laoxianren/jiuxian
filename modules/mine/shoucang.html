@@ -1,0 +1,39 @@
+
+	<!-- 头部 -->
+	<div id="mine-header-box">
+
+		 <div id="mine-header">
+		 	<a ui-sref="mine" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">我的收藏</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	 </div>
+	
+	 <div id="shoucang">
+	 	<span></span>
+	 	<p>您暂无收藏的商品   去其他页面逛逛吧</p>
+	 	<a ui-sref="home">先去逛逛</a>
+	 </div>

@@ -1,0 +1,119 @@
+	<div id="header">
+		<a class="header_home">
+		<img src="modules/images/jian.jpg" class="leftimg">
+		</a>
+		<p class="centp">商品详情</p>
+	</div>
+	<div id="shopInfo">
+		<div class="infoImg">
+			<div>
+				<img src="{{shop_img}}">
+			</div>		
+		</div>
+		
+		<div class="infoAll">
+			<h4>{{name}}</h4>
+			<p>{{shop_slogan}}</p>
+			<span>￥{{price}}</span>
+			<div class="d1">
+				<span>
+					<img src="modules/images/shopInfo-biao1.jpg">
+					<p>正品保障</p>
+				</span>
+				<span>
+					<img src="modules/images/shopInfo-biao2.jpg">
+					<p>绝对正品</p>
+				</span>
+				<span>
+					<img src="modules/images/shopInfo-biao3.jpg">
+					<p>假一赔十</p>
+				</span>
+			</div>
+			<div class="dd">
+				<img src="modules/images/shopInfo-biao4.gif">
+				<p>商品防伪</p>
+			</div>
+		</div>
+		<div class="preferential">
+			<p>优惠&nbsp;&nbsp;&nbsp;&nbsp;加一元得青花瓷酒具</p>
+			<p>金币&nbsp;&nbsp;&nbsp;&nbsp;赠送个<span>{{InitSales}}</span>金币</p>
+			<div class="addc">加入购物车成功</div>
+		</div>
+		<div class="preferential2">
+			<p>数量&nbsp;&nbsp;&nbsp;&nbsp;<span class="sp1 prev">-</span><span class="sp1 number1">1</span><span class="sp1 add">+</span></p>
+			<p>送至&nbsp;&nbsp;&nbsp;&nbsp;北京</p>
+			<p>有货</p>
+			<p>提示&nbsp;&nbsp;&nbsp;&nbsp;每买两瓶，即赠送厂家提袋1个</p>
+		</div>
+	</div>
+	<div class="shopt">
+		<h3>产品详情</h3>
+		<table>
+			<tr>
+				<td>产地</td>
+				<td>中国,四川</td>
+			</tr>
+			<tr>
+				<td>适用场合</td>
+				<td>商务用酒,礼节拜访,聚会用酒</td>
+			</tr>
+			<tr>
+				<td>净含量</td>
+				<td>600ml*4</td>
+			</tr>
+			<tr>
+				<td>酒厂</td>
+				<td>四川水井坊股份有限公司</td>
+			</tr>
+			<tr>
+				<td>酒精度</td>
+				<td>52</td>
+			</tr>
+			<tr>
+				<td>箱规</td>
+				<td>1*4*2</td>
+			</tr>
+			<tr>
+				<td>储藏条件</td>
+				<td>常温,干燥,阴凉,避光</td>
+			</tr>
+			<tr>
+				<td>规格</td>
+				<td>礼盒装</td>
+			</tr>
+			<tr>
+				<td>香型</td>
+				<td>弄相信</td>
+			</tr>
+			<tr>
+				<td>原料</td>
+				<td>水、高梁、大米、糯米、小麦、玉米</td>
+			</tr>
+			<!-- <tr>点击加载全部</tr> -->
+		</table>
+		<h3>商品特点</h3>
+		<ul>
+			<li ng-repeat="x in infoArr"><a href="#"><img ng-src={{x.src}}></a></li>
+			
+		</ul>
+	</div>
+	<div class="footer">
+		<div class="footerLeft">
+			<a href="#">
+				<img src="modules/images/zxkf.png">
+			</a>
+			<a href="#" class="collect">
+				<img src="modules/images/bottom05.png">
+			</a>
+			<a href="#">
+				<img src="modules/images/bottom06.png">
+			</a>
+			<div class="collectY">收藏成功</div>
+			<div class="collectN">取消收藏</div>
+		</div>
+		<div class="footerRight">
+			<a class="addCart">加入购物车</a>
+			<a ui-sref="cart">立即购买</a>
+		</div>
+		<span class="number2">0</span>
+	</div>

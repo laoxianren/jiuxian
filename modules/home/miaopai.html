@@ -1,0 +1,353 @@
+<!-- 头部 -->
+	<div id="mine-header-box">
+
+		 <div id="mine-header">
+		 	<a ui-sref="home" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">掌上秒拍</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+	 </div>
+
+<div id="miaopai" >
+	<div class="miaopai-div1">	
+		<ul class="miaopai-ul">
+			<li class="miaopai-li"><a href="#" class="miaopai-a">7点场</a></li>
+			<li class="miaopai-li"><a href="#">10点场</a></li>
+			<li class="miaopai-li"><a href="#">15点场</a></li>
+			<li class="miaopai-li"><a href="#">19点场</a></li>
+		</ul>
+	</div>
+
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        	<div class="miaopai-div2">
+		<div class="miaopai-div2-div1 swiper-wrapper">
+				<div class="miaopai-div2-div1-div1 swiper-slide">
+					<div class="miaopai-div2-div1-div1-div1">
+						<h4>
+							<i></i>
+							抢购中
+						</h4>
+						<div class="miaopai-div2-div1-div1-div1-div1">
+							<span class="miaopai-div8-span1">距结束</span>
+							<span class="miaopai-div8-span2">
+								<i>23</i>
+								<span>:</span>
+								<i>40</i>
+								<span></span>
+								<i>44</i>
+							</span>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="miaopai-div2">
+		<div class="miaopai-div2-div1 swiper-wrapper">
+				<div class="miaopai-div2-div1-div1 swiper-slide">
+					<div class="miaopai-div2-div1-div1-div1">
+						<h4>
+							<i></i>
+							抢购中
+						</h4>
+						<div class="miaopai-div2-div1-div1-div1-div1">
+							<span class="miaopai-div8-span1">距结束</span>
+							<span class="miaopai-div8-span2">
+								<i>23</i>
+								<span>:</span>
+								<i>40</i>
+								<span></span>
+								<i>44</i>
+							</span>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="miaopai-div2">
+		<div class="miaopai-div2-div1 swiper-wrapper">
+				<div class="miaopai-div2-div1-div1 swiper-slide">
+					<div class="miaopai-div2-div1-div1-div1">
+						<h4>
+							<i></i>
+							抢购中
+						</h4>
+						<div class="miaopai-div2-div1-div1-div1-div1">
+							<span class="miaopai-div8-span1">距结束</span>
+							<span class="miaopai-div8-span2">
+								<i>23</i>
+								<span>:</span>
+								<i>40</i>
+								<span></span>
+								<i>44</i>
+							</span>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="miaopai-div2">
+		<div class="miaopai-div2-div1 swiper-wrapper">
+				<div class="miaopai-div2-div1-div1 swiper-slide">
+					<div class="miaopai-div2-div1-div1-div1">
+						<h4>
+							<i></i>
+							抢购中
+						</h4>
+						<div class="miaopai-div2-div1-div1-div1-div1">
+							<span class="miaopai-div8-span1">距结束</span>
+							<span class="miaopai-div8-span2">
+								<i>23</i>
+								<span>:</span>
+								<i>40</i>
+								<span></span>
+								<i>44</i>
+							</span>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	</div>
+        </div>
+    </div>
+    
+     <!-- <div class="swiper-pagination"> -->
+     	
+		
+
+
+
+     <!-- </div>  -->   
+    
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="miaopai-main" ng-repeat=" o in arr5.tuan.order" id ={{o.goods_id}} ng-click="click_li()" ui-sref="shopInfo">
+	<ul class="miaopai-main-ul">
+		<li class="miaopai-main-li">
+			<div class="miaopai-main-li-div1">
+				<div class="miaopai-main-li-div1-div1">
+					<img ng-src={{o.goods_thumb}}>
+				</div>
+				<div class="miaopai-main-li-div1-div2">
+					<h4>{{o.goods_name}}</h4>
+					<h4>每人1天限购5瓶</h4>
+					<div class="miaopai-main-l">
+						秒拍价：
+						<b>
+							<strong>{{o.market_price}}</strong>
+						</b>
+					</div>
+					<div class="miaopai-main-c">
+						<strong>已售100%</strong>
+						<span><em></em></span>
+					</div>
+					<div class="miaopai-main-r">
+						<a href="#">去抢购</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+
+<!-- 
+<div class="miaopai-main">
+	<ul class="miaopai-main-ul">
+		<li class="miaopai-main-li">
+			<div class="miaopai-main-li-div1">
+				<div class="miaopai-main-li-div1-div1">
+					<img src="http://img10.jiuxian.com/2015/0529/2bd0fd0515cb44029c76258a127fb29e2.jpg">
+				</div>
+				<div class="miaopai-main-li-div1-div2">
+					<h4>53°王祖烧坊珍品系列·禅韵500ml</h4>
+					<h4>每人1天限购5瓶</h4>
+					<div class="miaopai-main-l">
+						秒拍价：
+						<b>
+							<strong>￥29</strong>
+						</b>
+					</div>
+					<div class="miaopai-main-c">
+						<strong>已售100%</strong>
+						<span><em></em></span>
+					</div>
+					<div class="miaopai-main-r">
+						<a href="#">去抢购</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="miaopai-main">
+	<ul class="miaopai-main-ul">
+		<li class="miaopai-main-li">
+			<div class="miaopai-main-li-div1">
+				<div class="miaopai-main-li-div1-div1">
+					<img src="http://img10.jiuxian.com/2015/0529/2bd0fd0515cb44029c76258a127fb29e2.jpg">
+				</div>
+				<div class="miaopai-main-li-div1-div2">
+					<h4>53°王祖烧坊珍品系列·禅韵500ml</h4>
+					<h4>每人1天限购5瓶</h4>
+					<div class="miaopai-main-l">
+						秒拍价：
+						<b>
+							<strong>￥29</strong>
+						</b>
+					</div>
+					<div class="miaopai-main-c">
+						<strong>已售100%</strong>
+						<span><em></em></span>
+					</div>
+					<div class="miaopai-main-r">
+						<a href="#">去抢购</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="miaopai-main">
+	<ul class="miaopai-main-ul">
+		<li class="miaopai-main-li">
+			<div class="miaopai-main-li-div1">
+				<div class="miaopai-main-li-div1-div1">
+					<img src="http://img10.jiuxian.com/2015/0529/2bd0fd0515cb44029c76258a127fb29e2.jpg">
+				</div>
+				<div class="miaopai-main-li-div1-div2">
+					<h4>53°王祖烧坊珍品系列·禅韵500ml</h4>
+					<h4>每人1天限购5瓶</h4>
+					<div class="miaopai-main-l">
+						秒拍价：
+						<b>
+							<strong>￥29</strong>
+						</b>
+					</div>
+					<div class="miaopai-main-c">
+						<strong>已售100%</strong>
+						<span><em></em></span>
+					</div>
+					<div class="miaopai-main-r">
+						<a href="#">去抢购</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="miaopai-main">
+	<ul class="miaopai-main-ul">
+		<li class="miaopai-main-li">
+			<div class="miaopai-main-li-div1">
+				<div class="miaopai-main-li-div1-div1">
+					<img src="http://img10.jiuxian.com/2015/0529/2bd0fd0515cb44029c76258a127fb29e2.jpg">
+				</div>
+				<div class="miaopai-main-li-div1-div2">
+					<h4>53°王祖烧坊珍品系列·禅韵500ml</h4>
+					<h4>每人1天限购5瓶</h4>
+					<div class="miaopai-main-l">
+						秒拍价：
+						<b>
+							<strong>￥29</strong>
+						</b>
+					</div>
+					<div class="miaopai-main-c">
+						<strong>已售100%</strong>
+						<span><em></em></span>
+					</div>
+					<div class="miaopai-main-r">
+						<a href="#">去抢购</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="miaopai-main">
+	<ul class="miaopai-main-ul">
+		<li class="miaopai-main-li">
+			<div class="miaopai-main-li-div1">
+				<div class="miaopai-main-li-div1-div1">
+					<img src="http://img10.jiuxian.com/2015/0529/2bd0fd0515cb44029c76258a127fb29e2.jpg">
+				</div>
+				<div class="miaopai-main-li-div1-div2">
+					<h4>53°王祖烧坊珍品系列·禅韵500ml</h4>
+					<h4>每人1天限购5瓶</h4>
+					<div class="miaopai-main-l">
+						秒拍价：
+						<b>
+							<strong>￥29</strong>
+						</b>
+					</div>
+					<div class="miaopai-main-c">
+						<strong>已售100%</strong>
+						<span><em></em></span>
+					</div>
+					<div class="miaopai-main-r">
+						<a href="#">去抢购</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</li>
+	</ul>
+</div> -->
+
+
+
+<div class="miaopai-footer">
+	<a href="#">查看活动规则  ></a>
+</div>

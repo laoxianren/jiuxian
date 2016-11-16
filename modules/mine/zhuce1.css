@@ -1,0 +1,427 @@
+/*头部样式*/
+#mine-header-box{
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: block;
+}
+#mine-header{
+	width: 100%;
+	height: 40px;
+	background-color: #de4943;
+	color: #fff;
+}
+.mine-header-a1{
+	text-decoration: none;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	display: block;
+	background-position: -15px 6px;
+    right: 10px;
+	background: url(https://miscssl.jiuxian.com/mjava_statics/images/headBack.jpg) no-repeat
+}
+.mine-header-h2{
+	width: 2.2rem;
+	height: 40px;
+	margin-left: -1.1rem;
+	font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+.mine-header-a2{
+	text-decoration: none;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+   
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/headIcon.png);
+	background-position: -150px 6px;
+}
+
+#mine-header-ul{
+
+	height: 44px;
+	width: 100%;
+    background-color:#efefef;
+    color: #848d96;
+    top: 40px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+#mine-header-ul li{
+	width: 25%;
+    height: 45px;
+    float: left;
+    position: relative;
+    color: #848d96;
+    font-size: .14rem;
+    text-align: center;
+}
+#mine-header-ul li i{
+	width: 26px;
+    height: 20px;
+    display: block;
+    margin: 5px auto 0;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/headIcon.png) no-repeat;
+    
+	
+}
+#mine-header-ul li:first-of-type i{
+	
+    background-position: -3px -5px;
+
+}
+#mine-header-ul li:nth-of-type(2) i{
+	
+	background-position: -37px -5px;
+}
+#mine-header-ul li:nth-of-type(3) i{	
+
+	background-position: -72px -5px;
+}
+#mine-header-ul li:nth-of-type(4) i{
+
+	background-position: -113px -5px;
+}
+#mine-header-ul li span{
+	width: auto;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+#mine-header-ul li a{
+	width: 100%;
+    height: 45px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+}
+
+/*注册*/
+#zhuce-ul{
+    width: 84%;
+    margin: 0 auto;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 55px;
+}
+.zhuce-li1{
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+}
+.zhuce-li1 p{
+    
+    height: 30px;
+    line-height: 40px;
+}
+.zhuce-li2 span{
+    display: block;
+    width: 62%;
+    height: 2px;
+    background-color: #de4943;
+    margin: 0 auto;
+    
+}
+.zhuce-li2{
+    color: #de4943;
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+}
+.zhuce-li2 p{
+    /*color: #de4943;*/
+    height: 30px;
+    line-height: 40px;
+}
+/*.zhuce-li2 span{
+    display: block;
+    width: 110px;
+    height: 2px;
+    background-color: #de4943;
+    margin: 0 auto;
+    
+}*/
+
+#zhuce-main{
+    margin-top: 10px;
+    width: 84%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #626365;
+}
+.zhuce-form{
+
+}
+.zhuce-form-div1{
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.zhuce-form-div1-i1{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 10px 10px 0 10px;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/loginIcon.png) no-repeat;
+    background-position: 0 -34px;
+}
+#v{
+    display: inline-block;
+    margin-top: 3px;
+    font-size: 14px;
+    color: red;
+    width: 95%;
+    height: 15px;
+}
+.zhuce-form-div1 input{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    font-family: Microsoft YaHei;
+}
+.zhuce-form-div1-i2{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 10px 10px 0 10px;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/loginIcon.png) no-repeat;
+    background-position: -72px -34px;   
+}
+.zhuce-form-div2{
+    height: 40px;
+    /*border: 1px solid #cccccc;*/
+    border-radius: 3px;
+    position: relative;
+}
+.zhuce-form-div1-div1{
+    width: 38%;
+    float: left;
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    position: relative;
+}
+.zhuce-form-div1-div1 input{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    border: 0;
+}
+.zhuce-form-div1-div2{
+        float: right;
+}
+ .zhuce-form-div1-div2 a:first-of-type{
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: right;
+    color: #626365;
+}
+.zhuce-form-div1-div2 a:last-of-type{
+    overflow: hidden;
+    margin-right: 10px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: right;
+}
+.zhuce-form-div1-div2 a:last-of-type img{
+    vertical-align: top;
+    border: 0;
+    width: 110px;
+    height: 40px;
+}
+.zhuce-form-div3{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-radius: 3px;
+    margin-bottom: 35px;
+    margin-top: 30px;
+    position: relative;
+}
+.zhuce-form-div3 input{
+    width: 48%;
+    height: 42px;
+    line-height: 40px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    border: 0;
+    border: 1px solid #cccccc;
+
+}
+.zhuce-form-div3-div1 a{
+    display: inline-block;
+    width: 35%;
+    height: 38px;
+    float: right;
+    background: #DE4B45;
+    color: #fff;
+    margin-right: 15px;
+    border-radius: 3px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 17px;
+}
+.btn{
+    width: 100%;
+    max-width: 300px;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+    background: #DE4B45;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+.zhuce-zhuce{
+    overflow: hidden;
+}
+.zhuce-zhuce a:first-of-type{
+    color: #666;
+    text-decoration: underline;
+    height: 20px;
+    display: block;
+    float: left;
+
+}
+.zhuce-zhuce a:last-of-type{
+    float: right;
+    color: #666;
+    text-decoration: underline;
+    height: 20px;
+    display: block;
+}
+.zhuce-huoban{
+    display: block;
+    margin-top: 10px;
+}
+.zhuce-huoban-div1{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+.zhuce-huoban-div1-div1{
+    height: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+.zhuce-huoban-div1-div2{
+   width: 110px;
+    height: 40px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    line-height: 40px;
+    margin: 0 0 0 -55px;
+    text-align: center;
+    color: #878686;
+
+}
+.zhuce-huoban-ul{
+        margin: 20px 0;
+        list-style: none;
+}
+.zhuce-huoban-li1{
+        width: 33%;
+    float: left;
+}
+.zhuce-huoban-li1 a{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-left: 30%;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/loginIcon.png) no-repeat;
+        background-position: -78px -99px;
+}
+.zhuce-huoban-li2{
+        width: 33%;
+    float: left;
+}
+.zhuce-huoban-li2 a{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-left: 30%;
+    background: url(https://miscssl.jiuxian.com/mjava_statics/images/loginIcon.png) no-repeat;
+    background-position: -156px -99px;
+}
+
+#baa{
+    width: 120%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100%;
+    text-align: center;
+}
+#baa p{
+    display: inline-block;
+    color: #fff;
+    width: 60%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    margin-top: 2.2rem;
+    margin-right: 0.82rem;
+    font-size: 0.22rem;
+}
+#span{
+    position: absolute;
+    top: 150px;
+    right: 120px;
+    padding: 0.05rem 0.1rem;
+    border:solid 1px #fff;
+}

@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: Arial, Helvetica, sans-serif,"宋体";}
+body{position: relative;}
+#header{width: 100%;height: 0.4rem;background:#de4943;position: fixed;top: 0px;left: 0px;z-index: 100;}
+	.leftimg{float: left;margin-left: 2.5%;height: 0.3rem;margin-top: 0.05rem;}
+	.centp{float: left;font-size: 0.16rem;line-height: 0.4rem;margin-left: 36%;color: #fff;}
+	.rightimg{float: left; margin-left:36%;margin-top: 0.15rem;}
+#nav1{width: 100%;height: 0.4rem;background:#eeebeb;position: fixed;top: 0.4rem;left: 0px; display: -webkit-flex;}
+	#nav1>a{display: -webkit-flex;flex-direction: column;align-items: center;flex: 1;}
+	#nav1>a>p{font-size: 0.12rem;margin-top: 0.02rem;}
+	#nav1>a>img{margin-top: 0.02rem;}
+#hdh{width: 95%;margin-top:0.5rem;margin-left: 2.5%;}
+	.navbox{overflow: hidden;}
+		.img_navbox{height: 1.97rem; width: 100%;}
+		.img_navbox>a{float: left;}
+			.img1{height: 1.97rem;width: 60%;}
+			.img1>img{width: 100%;}
+			.img2{height: 0.985rem;width: 40%;}
+			.img2>img{width: 100%;display: block;}
+			.img3{height: 0.985rem;width: 40%;}
+			.img3>img{width: 100%;display: block;}	
+		.nav_navbox{width: 100%;margin-top: 0.14rem;}
+		.nav_navbox ul li{border:solid 1px #c3c3c3;border-radius: 0.02rem;height: 0.32rem;width: 24%;margin-right: 1%;float: left;margin-bottom: 0.04rem;}
+		.nav_navbox ul li a{font-size: 0.14rem;line-height: 0.32rem;float: left;text-align: center;width: 100%;}
+		.nav_navbox ul li:last-of-type a{color: red;}
+	.shopInfo{margin-top: 0.3rem;width: 100%;}
+	.shopInfo fieldset{border-right: none;border-bottom: none;border-left: none;border-top-color: #c3c3c3;}
+	.shopInfo fieldset legend{font-size: 0.16rem;text-align: center;}
+	.shopInfo ul{width: 100%; margin-top: 0.07rem;}
+	.shopInfo ul li{width: 100%;overflow: hidden;border-bottom: solid 1px #e7e7e7;height: 1.2rem;margin-top: 0.07rem;}
+	.shopInfo ul li:last-of-type{border-bottom: none;}
+	.shopInfo ul li a{width: 100%;display: block;height: 1.2rem;overflow: hidden;}
+	.shopInfo ul li a img{height: 1rem;float: left;margin-top: 0.1rem;margin-left: 2.5%;margin-right: 3%;}
+	.shopInfo ul li a div{margin-top: 0.15rem;float: left;}
+		.p1{font-size: 0.13rem;color: #000000;height: 0.36rem;line-height: 0.18rem}
+		.p2{font-size: 0.13rem;color: #f58f2b;margin-bottom: 0.2rem;}
+		.p3{font-size: 0.15rem;color: #df4a44;font-weight: bold;}
+	.allInfo{width: 26.6%;height: 0.3rem;margin-top: 0.1rem;margin-left: 37%;background: #de4943;}
+	.allInfo a{width: 100%;font-size: 0.14rem;line-height: 0.3rem;text-align: center;color: #fff;float: left;}

@@ -1,0 +1,69 @@
+<div class="list_all">	
+	<div id="mine-header-box">
+		 <div id="mine-header">
+		 	<a ui-sref="sort" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">列级名庄</h2>
+		 	<a class="mine-header-a2" ng-click="click_choose()"></a>
+		 </div>
+	</div>
+	<div class="list_img">
+		<img src="http://img06.jiuxian.com/bill/2016/0304/f0a64ce90a9f45daa67154d36aeb28a4.jpg"/>
+	</div>
+	<div class="list_modules">
+		<img src="http://img07.jiuxian.com/bill/2016/0304/d56e1d1e2e8b4a2bac003c4ef62c7c18.jpg">
+		<ul class="modules_ul1">
+			<li ng-repeat='i in arr1' ui-sref='shopInfo' ng-click='click_xx()'>
+				<div>
+					<img lazy-src={{i.middle}}/>
+				</div>
+				<p>{{i.goods_name}}</p>
+				<p>￥{{i.cur_price}}<span class="modules_price">{{i.shop_price}}</span></p>
+				<div>点击购买</div>
+			</li>
+		</ul>
+	</div>
+	<div class="list_modules">
+		<img src="http://img08.jiuxian.com/bill/2016/0304/4a87b7685ec54d078800a85325d916b6.jpg">
+		<ul class="modules_ul1">
+			<li ng-repeat='i in arr2' ui-sref='shopInfo' ng-click='click_xx()'>
+				<div>
+					<img lazy-src={{i.middle}}/>
+				</div>
+				<p>{{i.goods_name}}</p>
+				<p>￥{{i.cur_price}}<span class="modules_price">{{i.shop_price}}</span></p>
+				<div>点击购买</div>
+			</li>
+		</ul>
+	</div>
+	<div class="list_modules">
+		<img src="http://img10.jiuxian.com/bill/2016/0304/a4b20147ad82492c94970749209dcfab.jpg">
+		<ul class="modules_ul1">
+			<li ng-repeat='i in arr3' ui-sref='shopInfo' ng-click='click_xx()'>
+				<div>
+					<img lazy-src={{i.middle}}/>
+				</div>
+				<p>{{i.goods_name}}</p>
+				<p>￥{{i.cur_price}}<span class="modules_price">{{i.shop_price}}</span></p>
+				<div>点击购买</div>
+			</li>
+		</ul>
+	</div>
+	<div class="list_modules">
+		<img src="http://img09.jiuxian.com/bill/2016/0304/dfa49965aec84e39be4092afce605b50.jpg">
+		<ul class="modules_ul1">
+			<li ng-repeat='i in arr4' ui-sref='shopInfo' ng-click='click_xx()'>
+				<div>
+					<img lazy-src={{i.middle}}/>
+				</div>
+				<p>{{i.goods_name}}</p>
+				<p>￥{{i.cur_price}}<span class="modules_price">{{i.shop_price}}</span></p>
+				<div>点击购买</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+	

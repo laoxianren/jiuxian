@@ -1,0 +1,85 @@
+fehelperFeHelper：JSON格式化查看
+
+{
+	"img":{		
+	"img1":[
+	"http://img09.jiuxian.com/bill/2016/1112/81a4bdda41f2470a958370672067cb1e.jpg",
+	"http://img06.jiuxian.com/bill/2016/1112/e966ee4956624b7dabe6394bc8750733.jpg",
+	"http://img08.jiuxian.com/bill/2016/1110/b6d5452ad4f54a308a0ab24013f264e3.jpg"
+	],
+	"img2":[
+	"http://img07.jiuxian.com/bill/2016/1112/6af896acf5f64db6ac773f690ec921ce.jpg",
+	"http://img08.jiuxian.com/bill/2016/1112/62b55d234f3d4259a1d8eedb219a9c8b.jpg",
+	"http://img07.jiuxian.com/bill/2016/1111/fdbd174c48044c70839370f5740534c8.jpg"
+	],
+	"img3":[
+	"http://img06.jiuxian.com/bill/2016/1112/747d7b0058af46728010a1adee2ea2a5.jpg",
+	"http://img09.jiuxian.com/bill/2016/1111/713a3be982fc4d4cb0b4f3b46e0639ce.jpg",
+	"http://img08.jiuxian.com/bill/2016/1111/4981fde7edad43798d8d10d6ad26ff7c.jpg"
+	]	
+},
+	"name":{
+	"name1":[
+	"茅台","五粮液","汾酒","泸州老窖","酱香","清香","浓香","查看全部"
+	],
+	"name2":[
+	"法国","澳大利亚","西班牙","智利","拉菲","奔富","张裕","查看全部"
+	],
+	"name":[
+	"白兰地","威士忌","伏特加","龙舌兰","朗姆酒","预调酒","韩国烧酒","查看全部"
+	]
+}	
+	
+}
+格式化
+{
+"img": {
+"img1": [
+"http://img09.jiuxian.com/bill/2016/1112/81a4bdda41f2470a958370672067cb1e.jpg",
+"http://img06.jiuxian.com/bill/2016/1112/e966ee4956624b7dabe6394bc8750733.jpg",
+"http://img08.jiuxian.com/bill/2016/1110/b6d5452ad4f54a308a0ab24013f264e3.jpg"
+],
+"img2": [
+"http://img07.jiuxian.com/bill/2016/1112/6af896acf5f64db6ac773f690ec921ce.jpg",
+"http://img08.jiuxian.com/bill/2016/1112/62b55d234f3d4259a1d8eedb219a9c8b.jpg",
+"http://img07.jiuxian.com/bill/2016/1111/fdbd174c48044c70839370f5740534c8.jpg"
+],
+"img3": [
+"http://img06.jiuxian.com/bill/2016/1112/747d7b0058af46728010a1adee2ea2a5.jpg",
+"http://img09.jiuxian.com/bill/2016/1111/713a3be982fc4d4cb0b4f3b46e0639ce.jpg",
+"http://img08.jiuxian.com/bill/2016/1111/4981fde7edad43798d8d10d6ad26ff7c.jpg"
+]
+},
+"name": {
+"name1": [
+"茅台",
+"五粮液",
+"汾酒",
+"泸州老窖",
+"酱香",
+"清香",
+"浓香",
+"查看全部"
+],
+"name2": [
+"法国",
+"澳大利亚",
+"西班牙",
+"智利",
+"拉菲",
+"奔富",
+"张裕",
+"查看全部"
+],
+"name": [
+"白兰地",
+"威士忌",
+"伏特加",
+"龙舌兰",
+"朗姆酒",
+"预调酒",
+"韩国烧酒",
+"查看全部"
+]
+}
+}

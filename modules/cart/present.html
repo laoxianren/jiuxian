@@ -1,0 +1,90 @@
+<div id="submitCart">
+		<div class="submitCart-1">
+			<!-- 头部 -->
+		 <div id="mine-header">
+		 	<a ui-sref="cart" class="mine-header-a1"></a>
+		 	<h2 class="mine-header-h2">提交订单</h2>
+		 	<a class="mine-header-a2" ng-click="click_ul()"></a>
+		 </div>
+
+		 <ul id="mine-header-ul" ng-show='show'>
+	 		<li>
+	 			<i></i>
+	 			<span>首页</span>
+	 			<a ui-sref="home"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>搜索</span>
+	 			<a ui-sref="sort"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>购物车</span>
+	 			<a ui-sref="cart"></a>
+	 		</li>
+	 		<li>
+	 			<i></i>
+	 			<span>我的酒仙</span>
+	 			<a ui-sref="mine"></a>
+	 		</li> 
+	 	</ul>
+		</div>
+		<div class="submitCart-2">
+			<ul>
+				<li>
+					<div>
+					<h3>收货人信息:陈均泽</h3>
+					<p>请填写收货地址：北京市昌平区物美大卖场二楼<span>></span></p>
+					</div>
+				</li>
+				<li>
+					<div>
+					<h3>支付方式：支付宝</h3>
+					<p>货到付款 , 七日包退包换<span>></span></p>
+					</div>
+				</li>
+				<li>
+					<div>
+					<h3>发票信息：</h3>
+					<p>发票内容：<span>></span></p>
+					</div>
+				</li>
+				<li>
+					<div>
+					<h3>优惠方式：新用户注册</h3>
+					<p>优惠券<span>满299减50（新客注册）&nbsp;&nbsp;&nbsp;></span></p>
+					</div>
+				</li>
+				<li>
+					<div>
+					<h3>配送信息：配送中...</h3>
+					<p>快递运输：圆通快递</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<h3>订单备注：<span>少于45字</span></h3>
+						<input type="text" >
+					</div>
+				</li>
+				<li>
+					<div>
+					<p>商品结算：<span class="submitCart-2-span">实付金额：￥{{money}}</span></p>
+					<h3>商品总额：<span>￥{{money}}</span></h3>
+					<ul>
+						<li>运费：￥0</li>
+						<li>折扣：￥0</li>
+						<li>优惠：￥0</li>
+						<li>返现：￥0</li>
+						<li>余额：￥0</li>
+					</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="submitCart-bottom">
+			<a ui-sref="mine">提交订单</a>
+			
+		</div>
+	</div>
